@@ -3,19 +3,32 @@ var fs = require("fs");
 
 window.onload = function() {
   var files = [];
-  var project = {"name":"Untitled", "sources":{}, "notecards":{}};
+  project = {"name":"Untitled", "sources":{}, "notecards":{}};
+  projectLocation = "";
 
   var openProject = document.getElementById("openproject");
 
   openProject.onclick = () => {
-    files = (dialog.showOpenDialog({properties:["openFile"], filters:[
+    var files = (dialog.showOpenDialog({properties:["openFile"], filters:[
       {name:"JSON Project", extensions:["json"]}
     ]}));
-    fs.readFile(files[0], (err, data) => {
-      if(err) {
-        return console.error(err);
-      }
-      project = JSON.parse(data);
-    });
+    if(files != undefined) {
+      projectLocation = files[0];
+      fs.readFile(files[0], (err, data) => {
+        if(err) {
+          return console.error(err);
+        }
+        project = JSON.parse(data);
+        document.getElementById("currentproject").innerHTML = project.name;
+      });
+    }
   }
+}
+
+function randomId() {
+  var str = "";
+  for(var i = 0; i < 3; i++) {
+    str += Math.floor(Math.random() * 10);
+  }
+  return str;
 }

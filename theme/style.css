@@ -38,3 +38,10 @@ div {
 div:target {
   display: block;
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 12pt;
+  text-align: center;
+  width: 100%;
+}
