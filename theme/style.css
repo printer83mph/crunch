@@ -4,7 +4,7 @@
 }
 body {
   position: relative;
-  margin: 5% 10%;
+  margin: 20pt 30pt;
   cursor: default;
   -webkit-user-select: none;
   font-family: sans-serif;
@@ -28,6 +28,9 @@ nav {
 }
 .button + .button {
   margin-left: 7pt;
+}
+h1 {
+  font-weight: 300;
 }
 div {
   display: none;

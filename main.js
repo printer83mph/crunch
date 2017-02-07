@@ -8,6 +8,7 @@ function createWindow() {
   });
 
   mainWindow.loadURL("file://" + __dirname + "/index.html#projects");
+  mainWindow.setMenu(null);
 
   mainWindow.on("closed", () => {
     mainWindow = null;
