@@ -6,6 +6,11 @@
   <script src="index.js"></script>
 </head>
 <body>
+  <header id="currentproject"> Untitled </header>
+	<header id="savestuff">
+    <a id="saveproject" class="button"> Save </a>
+    <a id="saveprojectas" class="button"> Save As </a>
+  </header>
   <nav>
     <a class="button" href="#projects"> Projects </a>
     <a class="button" href="#sources"> Sources </a>
@@ -13,8 +18,8 @@
   </nav>
   <div id="projects">
     <h1> Projects </h1>
-    <p> Switch to another tab to start a new project. </p>
-    <a id="openproject" class="button"> Open Project </a> <p> Current project: <span id="currentproject"></span> </p>
+		<a id="newproject" class="button"> New Project </a>
+    <a id="openproject" class="button"> Open Project </a> <a id="editname" class="button"> Change Name to: </a> <input type="text" id="newname"></input>
   </div>
   <div id="sources">
     <h1> Sources </h1>
@@ -24,9 +29,5 @@
     <h1> Notecards </h1>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
   </div>
-  <footer>
-    <a id="saveproject" class="button"> Save </a>
-    <a id="saveprojectas" class="button"> Save As </a>
-  </footer>
 </body>
 </html>

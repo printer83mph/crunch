@@ -12,12 +12,18 @@ body {
 }
 nav {
   text-align: center;
+  padding-bottom: 10pt;
+  border-bottom: lightgray solid 1px;
+}
+nav a {
+  cursor: default;
+  -webkit-user-drag: none;
 }
 .button {
   padding: 7pt;
   color: black;
   text-decoration: none;
-  border-radius: 2pt;
+  border-radius: 3pt;
   transition: 0.2s;
 }
 .button:hover {
@@ -38,10 +44,12 @@ div {
 div:target {
   display: block;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  padding: 12pt;
-  text-align: center;
-  width: 100%;
+#savestuff {
+	float:right;
+}
+#currentproject {
+  float:left;
+}
+a + input {
+  margin-left: 7pt;
 }
