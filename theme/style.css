@@ -46,10 +46,36 @@ div:target {
 }
 #savestuff {
 	float:right;
+  width: 20%;
+  text-align: right;
 }
 #currentproject {
   float:left;
+  width: 20%;
 }
 a + input {
   margin-left: 7pt;
+}
+ul {
+  padding-left: 0;
+}
+ul li {
+  padding: 10pt;
+  list-style: none;
+  margin: 0;
+}
+ul li + li {
+  border-top: 2px solid lightgray;
+}
+textarea,input[id="reference"] {
+  display: block;
+  margin: 0 0 7pt 0;
+  width: 100%;
+}
+textarea {
+  height: 50pt;
+  font-family: inherit;
+}
+#addsource {
+  float:right;
 }
