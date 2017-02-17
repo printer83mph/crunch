@@ -64,6 +64,9 @@ ul li {
   list-style: none;
   margin: 0;
 }
+ul li a {
+  float: right;
+}
 ul li + li {
   border-top: 2px solid lightgray;
 }
