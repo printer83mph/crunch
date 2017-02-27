@@ -1,9 +1,12 @@
 {
   "name": "crunch",
-	"description": "Simple research application made with Electron",
+  "description": "Simple research application made with Electron",
   "author": "Thomas Shaw <printer.83mph@gmail.com>",
   "version": "0.1.0",
   "main": "main.js",
+  "dependencies": {
+    "open": "0.0.5"
+  },
   "devDependencies": {
     "electron": "^1.4.15"
   }

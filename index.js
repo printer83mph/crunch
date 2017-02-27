@@ -1,5 +1,6 @@
 const {dialog} = require("electron").remote;
 var fs = require("fs");
+var open = require("open");
 
 window.onload = function() {
   var files = [];
@@ -62,9 +63,8 @@ window.onload = function() {
     source.innerHTML = cite;
     if(ref != "") {
       let link = document.createElement("a");
-      link.href = ref;
-      link.innerHTML = "Go"
-      link.className = "button";
+      link.href = "javascript:open('" + ref + "')";
+      link.innerHTML = ref;
       source.appendChild(link);
     }
   }
