@@ -60,9 +60,12 @@ window.onload = function() {
   function newSource(lis,cite,ref) {
     let source = document.createElement("li");
     lis.appendChild(source);
-    source.innerHTML = cite;
+    let desc = document.createElement("p");
+    desc.innerHTML = cite;
+    source.appendChild(desc);
     if(ref != "") {
       let link = document.createElement("a");
+      link.className = "button small";
       link.href = "javascript:open('" + ref + "')";
       link.innerHTML = ref;
       source.appendChild(link);
